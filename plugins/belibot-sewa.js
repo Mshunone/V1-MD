@@ -1,38 +1,44 @@
-var fetch = require("node-fetch");
-var handler = async (m, { 
- conn,
- text,
- usedPrefix,
- command
- }) => {
-var gh = 'https://github.com/BOTCAHX'
-  let buttonMessage= {
-'document':{'url':gh},
-'mimetype':'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-'fileName':'Payment Methode',
-'fileLength':'99999999999999',
-'pageCount':'999',
-'contextInfo':{
-'externalAdReply':{
-'showAdAttribution': true, 
-'mediaUrl':gh,
-'mediaType':2,
-'previewType':'pdf',
-'title':'Follow Github Gua',
-'body':'© BOTCAHX',
-'thumbnail':await(await fetch('https://telegra.ph/file/f4063ab3071f5c4af765a.png')).buffer(),
-'sourceUrl':gh}},
-'caption':'Hi, Silahkan pilih opsi di bawah ini.\n*Payment*\n\n*x* Dana: 082221792667\n*x* Pulsa: 082221792667',
-'footer':'©TioXd',
-'buttons':[
-{'buttonId':'.menu','buttonText':{'displayText':'ᴍᴇɴᴜ'},'type':1},
-{'buttonId':'.donasi','buttonText':{'displayText':'ᴅᴏɴᴀsɪ'},'type':1}
-],
-'headerType':6}
-    await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
-}
+let fs = require('fs')
+let handler = async (m, { conn }) => {
+let anu = `
+๑━━━═『 Open Sewa Botz 』═━━━๑
 
-handler.help = ['sewa'];
-handler.tags = ['main'];
-handler.command = ['sewa', 'sewabot', 'belibot'];
-module.exports = handler;
+╭━━━━「 *SEWA BOTZ* 」
+┊⫹⫺ PerBulan : 10k
+┊⫹⫺ PerTahun : 75k
+┊⫹⫺ Hemat : 3 Bulan = 25k
+┊⬡ MAU REQ HARGA SEWA? BISAA                                                      
+┊⬡ LANGGANAN 1 THN DPT APA? DPT DISKON PERMANEN 50%
+╰═┅═━––––––๑
+╭━━━━「 *JADI BOT* 」
+┊⫹⫺ PerBulan : 10k
+┊⫹⫺ PerTahun : 85k
+┊⫹⫺ Hemat : 5 Bulan = 45k
+┊⬡ MAU REQ HARGA JADIBOT? BISAA                                               
+┊⬡ MAU PUNYA BOT SENDIRI TP GA MAU PUSING 
+┊  MASALAH SERVER? DI SINI BISA !!
+╰═┅═━––––––๑
+   
+📮*NOTE* : Tidak melayani sewa bot permanen Tapi Klo mau 250k Gas...
+🎗️*GRUP BOT* : 
+https://chat.whatsapp.com/GeWPLmclHaVHsF0GymCcJz
+wa.me/6283805685278 ( Owner )
+`
+await conn.relayMessage(m.chat,  {
+    requestPaymentMessage: {
+      currencyCodeIso4217: 'USD',
+      amount1000: 9999,
+      requestFrom: m.sender,
+      noteMessage: {
+      extendedTextMessage: {
+      text: anu,
+      contextInfo: {
+      externalAdReply: {
+      showAdAttribution: true
+      }}}}}}, {})
+}// Tambah sendiri kalo mau
+handler.help = ['sewa']
+handler.tags = ['info']
+handler.command = /^(sewa|belibot|sewabot)$/i
+
+module.exports = handler
