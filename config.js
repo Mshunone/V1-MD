@@ -3,36 +3,36 @@ Untuk gambar background menu ada - di plugins menu
 untuk lainya saran jangan di ubah bre nanti eror*/
 
 /*global owner*/
-global.owner = ['6281395861695']  
-global.mods = ['6281395861695'] 
-global.prems = ['6281395861695']
+global.owner = ['6283805685278']  
+global.mods = ['6283805685278'] 
+global.prems = ['6283805685278']
 /*Nomor Owner & payment*/
-global.nameowner = 'BOTCAHX'
-global.numberowner = '6281395861695' 
-global.dana = '6281395861695'
-global.pulsa = '6281395861695'
-global.gopay = '6281395861695'
+global.nameowner = '⻝ Marxell'
+global.numberowner = '6283805685278' 
+global.dana = '--'
+global.pulsa = '--'
+global.gopay = '--'
 /*Nama Bot & Grouplink*/
-global.namebot = 'RTXZY-MD'
-global.gc = 'https://chat.whatsapp.com/D6BZVRSymWaFU28t2lxaO0'
-global.web = 'https://github.com/BOTCAHX'
-global.instagram = 'https://instagram.com/prm2.0'
+global.namebot = '「 http://ẉ˘Saꭙࣼia.id 」'
+global.gc = 'https://chat.whatsapp.com/GeWPLmclHaVHsF0GymCcJz'
+global.web = 'https://bit.ly/SaxiaShop'
+global.instagram = 'https://instagram.com/m.rxcl_'
 /*global wm*/
 global.lolkey = 'rey2k22'
 global.zenzkey = 'BagasPrdn'
-global.wm = '© R-TXZY-MD'
+global.wm = '「 http://ẉ˘Saꭙࣼia.id 」'
 global.watermark = wm
-global.wm2 = '⫹⫺ R-TXZY-MD'
-global.wm3 = '© R-TXZY-MD'
-global.wm4 = '© BOT RTXZY'
+global.wm2 = '「 http://ẉ˘Saꭙࣼia.id 」'
+global.wm3 = '「 http://ẉ˘Saꭙࣼia.id 」'
+global.wm4 = '「 http://ẉ˘Saꭙࣼia.id 」'
 global.fla = 'https://api.tiodevhost.my.id/api/textpro/glitch?text='
-global.wait = '_*Tunggu sedang di proses...*_'
-global.eror = '_*Server Error*_'
-global.benar = 'Benar ✅\n'
-global.salah = 'Salah ❌\n'
-global.stiker_wait = '*⫹⫺ Stiker sedang dibuat...*'
+global.wait = '「 Wait 98% 」ᴅɪᴘʀᴏꜱᴇꜱ...'
+global.eror = '「 ``404 ᴇʀʀᴏʀ`` 」'
+global.benar = 'вєɴαʀ'
+global.salah = 'ѕαlαн'
+global.stiker_wait = '「98%」Loading...'
 global.packname = 'Made with'
-global.author = 'Bot WhatsApp\nR-TXZY-MD'
+global.author = 'Saxia˘Botz\nWa.me/6283111136642'
 /*Rest api setting*/
 global.APIs = { // API Prefix
   // name: 'https://website'
