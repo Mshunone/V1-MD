@@ -7,6 +7,8 @@ handler.all = async function (m, { isBlocked }) {
     let teks = `Invite Group
 • 15 Day / Rp 5k
 • 30 Day / Rp 10k
+
+📮: Cuman 10k Perbulan Free ADD 1 Minggu gas!!
 Jika berminat hubungi: @${global.owner[0]} untuk order:)
 `
     this.reply(m.chat, teks, m)
